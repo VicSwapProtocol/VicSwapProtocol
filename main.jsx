@@ -1,15 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./style.css";
-import logo from "../public/logo.svg";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './style.css';
+import logo from './logo.svg';
 
 const App = () => (
-  <div className="app">
-    <img src={logo} alt="Vic Swap Logo" width="120" />
-    <h1>Welcome to Vic Swap Protocol</h1>
-    <p>Web3 platform coming soon...</p>
+  <div className="container">
+    <img src={logo} alt="Vic Swap Protocol" className="logo" />
+    <h1>Vic Swap Protocol</h1>
+    <p>Swap, Tokenize, and Manage your assets</p>
+    <button>Connect Wallet</button>
   </div>
 );
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
